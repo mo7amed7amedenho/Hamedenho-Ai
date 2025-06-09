@@ -2,9 +2,7 @@ import { type NextRequest, NextResponse } from "next/server";
 
 export const runtime = "edge";
 
-const OPENROUTER_API_KEY =
-  "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";
-
+const OPENROUTER_API_KEY = process.env.OPENROUTER_API_KEY!;
 export async function POST(req: NextRequest) {
   try {
     const { messages } = await req.json();
@@ -67,7 +65,7 @@ export async function POST(req: NextRequest) {
         method: "POST",
         headers: {
           Authorization: `Bearer ${OPENROUTER_API_KEY}`,
-          "HTTP-Referer": "https://hamedenho-chat.vercel.app",
+          "HTTP-Referer": "https://hamedenho-ai.vercel.app",
           "X-Title": "Hamedenho Chat",
           "Content-Type": "application/json",
         },
