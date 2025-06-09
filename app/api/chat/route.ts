@@ -74,7 +74,7 @@ export async function POST(req: NextRequest) {
           messages: [systemMessage, ...messages],
           stream: true,
           temperature: 0.7,
-          max_tokens: 4000,
+          max_tokens: 2000,
           top_p: 0.9,
         }),
       }
