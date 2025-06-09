@@ -3,7 +3,7 @@ import { type NextRequest, NextResponse } from "next/server";
 export const runtime = "edge";
 
 const OPENROUTER_API_KEY =
-  "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";
+  "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";
 
 export async function POST(req: NextRequest) {
   try {
