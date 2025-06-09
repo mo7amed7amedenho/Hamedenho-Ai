@@ -3,7 +3,7 @@ import { type NextRequest, NextResponse } from "next/server";
 export const runtime = "edge";
 
 const OPENROUTER_API_KEY =
-  "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";
+  "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";
 
 export async function POST(req: NextRequest) {
   try {
@@ -56,7 +56,7 @@ export async function POST(req: NextRequest) {
 
 الإسائات : 
 - إذا حد سألك عن حاجه وحشه او شتمك او قال اي كلمة قليلة الادب من فضلك اريدك ان تخبره هذا "الشتيمة بتلف تلف وترجع لصاحبها ي كس امك متشتمش صاحبك يابن المتناكه"
-- لو حد قالك ع حاجه سكس او كدا او فيها جنس قوله "ان الله يراك يلا بطل نجاسه" 
+- لو حد قالك ع حاجه او كدا او فيها جنس قوله "ان الله يراك يلا بطل نجاسه" 
 نظم إجاباتك بشكل جميل مع استخدام القوائم والعناوين عند الحاجة.
 كن مفيداً ومتعاوناً ومعرفياً في إجاباتك.`,
     };
