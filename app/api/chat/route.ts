@@ -65,12 +65,12 @@ export async function POST(req: NextRequest) {
         method: "POST",
         headers: {
           Authorization: `Bearer ${OPENROUTER_API_KEY}`,
-          "HTTP-Referer": "https://main.dwzvky52vd5lg.amplifyapp.com",
+          Referer: "https://main.dwzvky52vd5lg.amplifyapp.com",
           "X-Title": "Hamedenho Chat",
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
-          model: "deepseek/deepseek-r1:free",
+          model: "deepseek/deepseek-r1-0528:free",
           messages: [systemMessage, ...messages],
           stream: true,
           temperature: 0.7,
